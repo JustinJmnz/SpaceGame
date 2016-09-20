@@ -20,15 +20,15 @@ def main(stillPlaying):
     FPS = 60
     RED = (255,0,0)
     total_frames = 0  # Keeps track of all frames created
-    backgroundi = pygame.image.load("images/background.png")
+    backgroundi = pygame.image.load("Images/background.png")
     backgroundimg = backgroundi.convert_alpha()
     
-    ship = Ship((WIDTH/2)-37.5,HEIGHT- 91,75,41,"images/player.png") # Ship is a new sprite at (x,y) with height, width
+    ship = Ship((WIDTH/2)-37.5,HEIGHT- 91,75,41,"Images/player.png") # Ship is a new sprite at (x,y) with height, width
     
-    explosion = pygame.mixer.Sound("sound/explosion.ogg")
-    laser = pygame.mixer.Sound("sound/laser.ogg")
-    backgroundSound = pygame.mixer.Sound("sound/backgroundSound.ogg")
-    playerHit = pygame.mixer.Sound("sound/boom8.ogg")
+    explosion = pygame.mixer.Sound("Sound/explosion.ogg")
+    laser = pygame.mixer.Sound("Sound/laser.ogg")
+    backgroundSound = pygame.mixer.Sound("Sound/backgroundSound.ogg")
+    playerHit = pygame.mixer.Sound("Sound/boom8.ogg")
     backgroundSound.play(-1) # Play background music forever
     score = 0
     font = pygame.font.SysFont("Arial Black", 25)

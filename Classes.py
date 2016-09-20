@@ -34,7 +34,7 @@ class EnemyShip(BaseClass):
 
     def motion(self, SCREENWIDTH, explosion): # Motion of enemyShip
         if self.health == 50:
-            self.image = pygame.image.load("images/EnemyShipDamaged.png")
+            self.image = pygame.image.load("Images/enemyShipDamaged.png")
             explosion.play(0) # Play sound once
             self.health = 49
         if self.rect.x + self.width > SCREENWIDTH or self.rect.x < 0: # If im at the end of the window or at beginning
@@ -69,11 +69,11 @@ class Ship(BaseClass): # Ship class inherits sprites
         self.isAlive = True
     def motion(self, width): # Motion of the ship
         if self.health < 100 and self.health > 50:
-            self.image = pygame.image.load("images/playerDamaged.png")
+            self.image = pygame.image.load("Images/playerDamaged.png")
         elif self.health < 50 and self.health > 25:
-            self.image = pygame.image.load("images/playerDamaged2.png")
+            self.image = pygame.image.load("Images/playerDamaged2.png")
         elif self.health == 1:
-            self.image = pygame.image.load("images/playerDamaged3.png")
+            self.image = pygame.image.load("Images/playerDamaged3.png")
         predicted_location = self.rect.x + self.velx # Predict the location of the ship 
         if predicted_location < 0: # If the predicted location is less an screen width
             self.velx = 0 # Stop moving ship
@@ -122,7 +122,7 @@ class SpaceRocks(BaseClass):
         self.health = 100
     def motion(self):
         if self.health  == 50:
-            self.image = pygame.image.load("images/meteorSmall.png")
+            self.image = pygame.image.load("Images/meteorSmall.png")
         self.rect.y += self.vely
     @staticmethod
     def updateAll(explosion):
