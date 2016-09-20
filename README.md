@@ -11,4 +11,7 @@ Controls
 - 
 Dependencies
 ------------
- - Pygame
+Tested with the following 
+
+ - Python 2.7.12
+ - Pygame 1.9.2b8
