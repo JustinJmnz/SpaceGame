@@ -8,3 +8,7 @@ Controls
 - Your ship takes 3 hits to get destroyed.
 - Enemy ships take 2 hits to get destroyed.
 - Meteors take one hit, missles travel through them.
+- 
+Dependencies
+------------
+ - Pygame
